@@ -1,7 +1,3 @@
-# James Hall
-# CAP4453 Professor Rawat
-# Programming Assignment 1
-
 # NOTE: This program will write the resulting images to it's local directory.
 #       Run in an isolated folder to avoid clutter.
 
@@ -80,6 +76,7 @@ output_canny2 = cv2.imread('output_canny2.png', 0)
 output_image1 = cv2.imread('output_image.png', 0)
 output_image2 = cv2.imread('output_image2.png', 0)
 
+# Box Filtering
 #========================================#
 #______________Question 1________________#
 #========================================#
@@ -115,6 +112,7 @@ cv2.waitKey(0)
 # # # the box filters remove sharpness in the image and cause them to get
 # # # 'smoother' as the filter size increases.
 
+# Median Filtering
 # ========================================#
 # ______________Question 2________________#
 # ========================================#
@@ -176,6 +174,7 @@ cv2.waitKey(0)
 # # # Note the differences between the original and the subsequent images,
 # # # the median filters denoise the image
 
+# Gaussian Smoothing
 # ========================================#
 # ______________Question 3________________#
 # ========================================#
@@ -241,6 +240,7 @@ cv2.waitKey(0)
 #      Because of this Gaussian filtering took noticably more time than the box filtering, however, it also preserves the images edges
 #      better.
 
+# Gradient Operations
 # ========================================#
 # ______________Question 4________________#
 # ========================================#
@@ -292,7 +292,7 @@ derivatives(img3, backward_difference, 1)
 derivatives(img3, forward_difference, 2)
 derivatives(img3, central_difference, 3)
 
-
+# Sobel Filtering
 # ========================================#
 # ______________Question 5________________#
 # ========================================#
@@ -343,6 +343,7 @@ cv2.waitKey(0)
 #       have become obvious in the images. This is the point of sobel filtering,
 #       it is primarily used for edge detection within images.
 
+# Faster Gaussian Filtering
 # ========================================#
 # ______________Question 6________________#
 # ========================================#
@@ -410,6 +411,7 @@ cv2.waitKey(0)
 #       apply_filter_2D function by using 1D gaussian kernels and combining them
 #       through magnitude.
 
+# Custom Histogram Function
 # ========================================#
 # ______________Question 7________________#
 # ========================================#
@@ -437,6 +439,7 @@ plot_hist(img4, 64)
 #       This is because we are not changing the overall distribution of pixel values,
 #       we are simply condensing their value to fit the specified number of bins.
 
+# Canny Edge Detection
 # ========================================#
 # ______________Question 8________________#
 # ========================================#
@@ -635,6 +638,7 @@ cv2.imshow("output_canny1.png", output_canny1)
 cv2.imshow("output_canny2.png", output_canny2)
 cv2.waitKey(0)
 
+# Image Segmentation
 # ========================================#
 # ______________Question 9________________#
 # ========================================#
