@@ -1,4 +1,4 @@
-# Robot-VIsion
+# Robot-Vision
 Image Filtering for Canny Edge Detection
 
 
